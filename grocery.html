@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery List</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="grocery.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyA-4myHTltVgSVAsR3HQgHsfM535e2mPOg",
+        authDomain: "grocerylist-firebase.firebaseapp.com",
+        databaseURL: "https://grocerylist-firebase.firebaseio.com",
+        projectId: "grocerylist-firebase",
+        storageBucket: "grocerylist-firebase.appspot.com",
+        messagingSenderId: "135909049163"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="create">
+        <h1>Grocery List</h1>
+        <input type="text" id="categoryTitleTextBox" placeholder="e.g. HEB, Kroger"/>
+        <button id="createCategory">Sumbit</button>
+      </div>
+      <div id="groceryList">
+        </div>
+      </div>
+    </div>
+
+
+    <script src="grocery.js"></script>
+  </body>
+
+
+
+
+</html>
